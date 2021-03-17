@@ -1,8 +1,8 @@
 import { FirstLaunchService } from './first-launch-service';
 
 describe('FirstLaunchService', () => {
-  it('should add numbers', () => {
+  it('should indicate that the first launch has not been completed', () => {
     const sut = new FirstLaunchService();
-    expect(sut.add(4, 4)).toEqual(8);
+    expect(sut.firstLaunchCompleted()).toBeFalsy();;
   });
 });
